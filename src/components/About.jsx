@@ -27,7 +27,11 @@ const About = () => {
             {AboutDataCard.map((value) => {
               return (
                 <Col md="6" lg="4">
-                  <img src={value.img} alt="Digital_Art" className=" w-100" />
+                  <img
+                    src={value.img}
+                    alt="Digital_Art"
+                    className=" w-100 hover_img"
+                  />
                 </Col>
               );
             })}

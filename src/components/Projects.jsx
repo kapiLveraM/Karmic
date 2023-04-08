@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 const Projects = () => {
   var slick = {
-    dots: false,
+    dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -14,7 +14,6 @@ const Projects = () => {
     autoplay: false,
     autoplaySpeed: 1,
     cssEase: "linear",
-    speed: 4800,
     responsive: [
       {
         breakpoint: 1200,
@@ -22,7 +21,7 @@ const Projects = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -31,7 +30,7 @@ const Projects = () => {
           slidesToShow: 3,
           slidesToScroll: 2,
           infinite: true,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -40,7 +39,7 @@ const Projects = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -49,18 +48,18 @@ const Projects = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
+          dots: true,
         },
       },
     ],
   };
   return (
     <>
-      <section className="bg_wight py-5 bg_project_lg_img">
+      <section className="bg_wight pb-4 py-lg-5 bg_project_lg_img">
         <Container>
-          <div className=" position-relative  py-5">
-            <div className=" Projects_boder_top d-none d-sm-inline-block "></div>
-            <div className=" Projects_boder_bottom d-none d-sm-inline-block "></div>
+          <div className=" position-relative pt-3 pt-md-5 pb-2">
+            <div className=" Projects_boder_top d-none d-md-inline-block "></div>
+            <div className=" Projects_boder_bottom d-none d-md-inline-block "></div>
             <h2 className=" ff_primary fw-light fs_md text-black text-center mb-4">
               Projects
             </h2>
@@ -70,11 +69,11 @@ const Projects = () => {
               Magna id nisl quis vestibulum rhoncus.
             </p>
           </div>
-          <Row className=" d-none  d-xl-flex">
+          <Row className=" d-none   d-xl-flex">
             {ProjectsCardData.map((value) => {
               return (
                 <Col sm="6" md="6" xl="3">
-                  <div className=" scale pt-3">
+                  <div className=" scale position-relative z_index_3 pt-4">
                     <div className="position-relative overflow-hidden overlay_img">
                       <div className="overlay transition d-flex justify-content-center align-items-center cursor_pointer">
                         <h2 className="text-white fw-bold fs_xsm ff_primary">
@@ -97,7 +96,7 @@ const Projects = () => {
               {ProjectsCardData.map((value) => {
                 return (
                   <Col sm="6" md="6" xl="3" className=" px-3">
-                    <div className=" scale pt-3">
+                    <div className=" scale pt-4">
                       <div className="position-relative overflow-hidden overlay_img">
                         <div className="overlay transition d-flex justify-content-center align-items-center cursor_pointer">
                           <h2 className="text-white fw-bold fs_xsm ff_primary">
@@ -116,7 +115,7 @@ const Projects = () => {
               })}
             </Slider>
           </Row>
-          <div className=" text-center mt-5 pb-lg-5 pt-lg-5">
+          <div className=" text-center mt-5 pb-lg-5">
             <button className=" ff_primary fw_medium fs_xsm view_all_btn_tokyo">
               View All
             </button>
