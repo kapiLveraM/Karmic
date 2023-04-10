@@ -202,12 +202,6 @@
   background-repeat: no-repeat;
 }
 
-.bg_header_img {
-  background-image: url(../src/assets/image/png/bg_header_img.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 /* -----------all btn------------------- */
 .Connect_Wallet {
@@ -438,6 +432,9 @@ svg.Arrow_clr_change path {
   min-height: 80vh;
 }
 
+.z_index_n_2 {
+  z-index: -2;
+}
 
 /* ---------------------stack card -----------------------*/
 .cards-box {
@@ -553,17 +550,13 @@ svg.Arrow_clr_change path {
   cursor: pointer;
 }
 
-/* .z_index_3 {
-  z-index: 3;
-} */
-
 /*---------- @media screen only root------------ */
 @media (max-width:576px) {
   :root {
     --fs_xsm: 15px;
     --fs_sm: 20px;
     --fs_md: 44px;
-    --fs_lg: 48px;
+    --fs_lg: 40px;
   }
 }
 
@@ -705,16 +698,7 @@ svg.Arrow_clr_change path {
 }
 
 @media (min-width:992px) {
-  .boll_stacked_card {
-    position: absolute;
-    width: 147px;
-    top: -78px;
-    right: -28px;
-    height: 147px;
-    background: linear-gradient(197.32deg, rgba(255, 255, 255, 0.95) 14.48%, #242424 88.11%);
-    box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-  }
+
 
   .bg_wight {
     background-color: unset;
@@ -727,6 +711,30 @@ svg.Arrow_clr_change path {
   }
 
 
+}
+
+@media (min-width:1200px) {
+  .boll_stacked_card {
+    position: absolute;
+    width: 147px;
+    top: -78px;
+    right: -28px;
+    height: 147px;
+    background: linear-gradient(197.32deg, rgba(255, 255, 255, 0.95) 14.48%, #242424 88.11%);
+    box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+
+  .bg_header_img {
+    background-image: url(../src/assets/image/png/bg_header_img.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .min_vh_100 {
+    min-height: 100vh;
+  }
 }
 
 @media (min-width:1400px) {
@@ -752,4 +760,21 @@ svg.Arrow_clr_change path {
 
 .scale {
   transition: all 500ms linear;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 10px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

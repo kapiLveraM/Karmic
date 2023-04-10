@@ -6,10 +6,16 @@ import instgram from "../assets/image/svg/Instagram.svg";
 import twitter from "../assets/image/svg/Twitter.svg";
 import Facebook from "../assets/image/svg/Facebook.svg";
 import YouTube from "../assets/image/svg/YouTube.svg";
+import blur_end from "../assets/image/png/blur_end.png";
 const About = () => {
   return (
     <>
-      <section className=" pt-5 pb-2">
+      <section id="About" className=" pt-5 pb-2 position-relative">
+        <img
+          src={blur_end}
+          alt="blur_end"
+          className=" position-absolute d-none d-xl-inline-block end-0 z_index_n_2 bottom-50"
+        />
         <Container>
           <div className=" position-relative">
             <div className="Services_line_top d-none d-sm-inline-block "></div>
@@ -23,7 +29,7 @@ const About = () => {
               pretium diam aliquam montes, interdum malesuada.{" "}
             </p>
           </div>
-          <Row className=" justify-content-center pt-5">
+          <Row className=" justify-content-center pt-3 pt-xl-5">
             {AboutDataCard.map((value) => {
               return (
                 <Col md="6" lg="4">

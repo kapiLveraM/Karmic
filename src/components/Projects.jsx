@@ -55,7 +55,7 @@ const Projects = () => {
   };
   return (
     <>
-      <section className="bg_wight pb-4 py-lg-5 bg_project_lg_img">
+      <section id="projects" className="bg_wight pb-4 py-lg-5 bg_project_lg_img">
         <Container>
           <div className=" position-relative pt-3 pt-md-5 pb-2">
             <div className=" Projects_boder_top d-none d-md-inline-block "></div>

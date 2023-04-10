@@ -2,10 +2,16 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import UpcomingProjectsData from "./UpcomingProjectsData";
+import bluar_rigth_side from "../assets/image/png/bluar_rigth_side.png";
 const UpcomingProjects = () => {
   return (
     <>
-      <section className=" py-5">
+      <section className=" mt-lg-5 mt-0 py-5 position-relative">
+        <img
+          src={bluar_rigth_side}
+          alt="bluar_rigth_side"
+          className=" position-absolute  end-0 top-50 "
+        />
         <Container>
           <div className=" position-relative">
             <div className="boder_line_upcomming d-none d-md-inline-block"></div>

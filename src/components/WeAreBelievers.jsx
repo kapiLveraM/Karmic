@@ -36,11 +36,11 @@ const WeAreBelievers = () => {
 
   return (
     <>
-      <section className=" bg_header_img py-lg-5 flex-grow-1 d-flex justify-content-center align-items-center">
+      <section className=" bg_header_img py-4 py-xxl-5 flex-grow-1 d-flex justify-content-center align-items-center">
         <Container>
-          <Row className=" py-5 flex-column-reverse flex-lg-row align-items-center  justify-content-between">
+          <Row className=" py-xl-5 flex-column-reverse flex-lg-row align-items-center  justify-content-between">
             <Col lg="5" className=" pt-5 mt-md-5 mt-lg-0">
-              <h1 className=" fw-light ff_primary text-center text-lg-start fs_lg text-light">
+              <h1 className=" fw-light ff_primary text-center text-lg-start fs_lg text-light pt-4">
                 We are believers decentralization and{" "}
                 <span className=" position-relative web_line_after">Web3.</span>
               </h1>
@@ -76,7 +76,7 @@ const WeAreBelievers = () => {
             <Col
               lg="6"
               xl="5"
-              className=" py-5 py-lg-0 position-relative my-5 my-md-0"
+              className=" pb-5 py-md-5 py-lg-0 position-relative my-5 my-md-0"
             >
               <div className="boll_stacked_card"></div>
               <div class="cards-box m-auto">
@@ -153,7 +153,7 @@ const WeAreBelievers = () => {
               </div>
             </Col>
           </Row>
-          <div className=" text-center ">
+          <div className=" text-center pt-5 pt-lg-0 ">
             <a href="#fg">
               <img src={Arrow_1} alt="Arrow_1" />
             </a>

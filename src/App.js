@@ -9,7 +9,7 @@ import Projects from "./components/Projects";
 function App() {
   return (
     <>
-      <div className="min-vh-100 d-flex flex-column">
+      <div className="min_vh_100 d-flex flex-column">
         <KarmicLabNav />
         <WeAreBelievers />
       </div>

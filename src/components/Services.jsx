@@ -1,10 +1,18 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ServicesCardData from "./ServicesCardData";
+import Ellipse from "../assets/image/png/Ellipse.png";
+
 const Services = () => {
   return (
     <>
-      <section className=" py-5">
+      <section id="services" className=" py-5 position-relative">
+        <img
+          src={Ellipse}
+          alt="Ellipse"
+          className=" position-absolute top-50 d-none d-xl-inline-block"
+        />
+
         <Container>
           <div className=" position-relative">
             <div className="Services_line_top d-none d-sm-inline-block "></div>
@@ -34,6 +42,7 @@ const Services = () => {
             })}
           </Row>
         </Container>
+      
       </section>
     </>
   );

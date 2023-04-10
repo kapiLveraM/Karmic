@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Nav, Row, Col } from "react-bootstrap";
 import PageLogo from "../assets/image/png/PageLogo.png";
+import nave_side_blur from "../assets/image/png/nave_side_blur.png";
 const KarmicLabNav = () => {
   const [nav, setnav] = useState(false);
   if (nav) {
@@ -10,6 +11,11 @@ const KarmicLabNav = () => {
   }
   return (
     <div className="position-relative z_index_10">
+      <img
+        src={nave_side_blur}
+        alt="nave_side_blur"
+        className=" position-absolute z_index_n_2"
+      />
       <Nav className="py-3   ">
         <Container
         // data-aos="zoom-in"
@@ -33,7 +39,7 @@ const KarmicLabNav = () => {
                 <li>
                   <a
                     className="d-inline-block fs_xsm text_stroke fw_medium  text-light ff_primary underline position-relative ms-3"
-                    href="#Privacy"
+                    href="#services"
                   >
                     Services
                   </a>
@@ -41,7 +47,7 @@ const KarmicLabNav = () => {
                 <li>
                   <a
                     className="d-inline-block fs_xsm text_stroke fw_medium  text-light ff_primary underline position-relative ms-3"
-                    href="#Products"
+                    href="#projects"
                   >
                     Projects
                   </a>
@@ -49,7 +55,7 @@ const KarmicLabNav = () => {
                 <li>
                   <a
                     className="d-inline-block fs_xsm text_stroke fw_medium  text-light ff_primary underline position-relative ms-3"
-                    href="#App"
+                    href="#About"
                   >
                     About
                   </a>
